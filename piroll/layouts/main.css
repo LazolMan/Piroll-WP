@@ -1,0 +1,943 @@
+@import "reset.css";
+.wrapper {
+  width: calc(100% - 20px);
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 9;
+}
+header {
+  padding-top: 38px;
+  background: #e9e9e9;
+}
+header .header_box {
+  display: flex;
+  justify-content: space-between;
+}
+header .header_box .header_menu {
+  width: 100%;
+}
+header .header_box .header_menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header_box .header_menu ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  transition: 0.3s color;
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+header .header_box .header_menu ul li .active {
+  color: #10c9c3;
+  transition: 0.3s color;
+}
+header .header_box .header_menu ul li.active {
+  color: #10c9c3;
+  transition: 0.3s color;
+}
+header .header_box .header_menu ul li:hover {
+  color: #10c9c3;
+  cursor: pointer;
+  transition: 0.3s color;
+}
+header .header_box .header_menu ul li a {
+  color: inherit;
+}
+section.contact_us {
+  background: #e9e9e9;
+  padding-top: 180px;
+  padding-bottom: 200px;
+}
+section.contact_us .wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+section.contact_us .wrapper .contact_box {
+  width: 480px;
+}
+section.contact_us .wrapper .contact_box .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+}
+section.contact_us .wrapper .contact_box .description {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #787878;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  margin-bottom: 40px;
+}
+section.contact_us .wrapper .contact_box .button {
+  display: block;
+  width: 180px;
+  height: 55px;
+  background: #10c9c3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 55px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  transition: 0.3s background-color;
+}
+section.contact_us .wrapper .contact_box .button:hover {
+  background: #252525;
+  transition: 0.3s background-color;
+}
+section.about_us .about {
+  padding: 100px 0;
+}
+section.about_us .about .about_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.about_us .about .about_box .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 0.001em;
+  margin-bottom: 30px;
+}
+section.about_us .about .about_box .description {
+  max-width: 620px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #787878;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  margin-bottom: 35px;
+}
+section.about_us .skills {
+  display: flex;
+  width: 100%;
+}
+section.about_us .skills .left_box {
+  width: 50%;
+  background: #f8f9f9;
+  padding-top: 150px;
+  padding-bottom: 110px;
+}
+section.about_us .skills .left_box .wrapper {
+  max-width: 585px;
+  margin-right: 0;
+}
+section.about_us .skills .left_box .wrapper .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 0.001em;
+  margin-bottom: 40px;
+}
+section.about_us .skills .left_box .wrapper .items_list .item {
+  margin-bottom: 40px;
+}
+section.about_us .skills .left_box .wrapper .items_list .item .item_text {
+  margin-bottom: 20px;
+}
+section.about_us .skills .left_box .wrapper .items_list .item .item_text .item_title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 18px;
+}
+section.about_us .skills .left_box .wrapper .items_list .item .item_text .item_fill {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0.1em;
+}
+section.about_us .skills .left_box .wrapper .items_list .item .meter {
+  height: 3px;
+  position: relative;
+  background: #d8d8d8;
+  width: 85%;
+}
+section.about_us .skills .left_box .wrapper .items_list .item .meter span {
+  display: block;
+  height: 100%;
+  background-color: #10c9c3;
+  position: relative;
+  overflow: hidden;
+}
+section.about_us .skills .right_box {
+  width: 50%;
+  background: #e9e9e9;
+}
+section.about_us .skills .right_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+section.work .statictic {
+  padding: 100px 0;
+  background: #10c9c3;
+}
+section.work .statictic .items_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section.work .statictic .items_list .item {
+  display: flex;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+section.work .statictic .items_list .item .icon {
+  margin-right: 20px;
+  font-size: 40px;
+}
+section.work .statictic .items_list .item .item_text .amount_text {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+section.work .statictic .items_list .item .item_text .title_text {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+section.work .gallery .gallery_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #dddddd;
+}
+section.work .gallery .gallery_list .gallery_item {
+  width: 25%;
+  height: auto;
+  max-width: 340px;
+  max-height: 300px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.3s background-color;
+}
+section.work .gallery .gallery_list .gallery_item .gallery_img {
+  width: 100%;
+  height: 100%;
+}
+section.work .gallery .gallery_list .gallery_item .eye_icon > i {
+  display: none;
+}
+section.work .gallery .gallery_list .gallery_item:hover .link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.3s background-color;
+}
+section.work .gallery .gallery_list .gallery_item:hover .link img {
+  opacity: 0.5;
+}
+section.work .gallery .gallery_list .gallery_item:hover .link .eye_icon > i {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  font-size: 40px;
+  color: #ffffff;
+}
+section.work .gallery .loadmore {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #8e8e8e;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section.work_process {
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+section.work_process .work_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 60px;
+}
+section.work_process .work_box .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 40px;
+}
+section.work_process .work_box .description {
+  max-width: 525px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  color: #787878;
+  line-height: 24px;
+}
+section.work_process .video_box {
+  width: 100%;
+  color: #ffffff;
+}
+section.work_process .video_box img {
+  width: 100%;
+  height: auto;
+  max-height: 570px;
+  opacity: 0.5;
+}
+section.work_process .video_box figure {
+  position: relative;
+}
+section.work_process .video_box figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.work_process .video_box figure figcaption a {
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.work_process .video_box figure figcaption a .play_icon {
+  width: 85px;
+  height: 85px;
+  background-color: #10c9c3;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 85px;
+  font-size: 25px;
+  transition: 0.3s font-size;
+  display: block;
+}
+section.work_process .video_box figure figcaption a .play_icon:hover {
+  font-size: 30px;
+  transition: 0.3s font-size;
+}
+section.services {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background: #f5f5f5;
+}
+section.services .services_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+section.services .services_list .service_item {
+  max-width: calc(25% - 55px);
+  text-align: center;
+  margin-bottom: 60px;
+}
+section.services .services_list .service_item .icon {
+  font-size: 40px;
+  color: #787878;
+}
+section.services .services_list .service_item .service_title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #191919;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+section.services .services_list .service_item .service_description {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #787878;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+section.testimonials .reviews {
+  background-color: #10c9c3;
+}
+section.testimonials .reviews .reviews_slider .slide > .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 180px;
+}
+section.testimonials .reviews .reviews_slider .slide > .wrapper .slide_description {
+  max-width: 835px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 36px;
+  letter-spacing: 0.001em;
+  margin-bottom: 40px;
+}
+section.testimonials .reviews .reviews_slider .slide > .wrapper .slide_author {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  margin-bottom: 110px;
+}
+section.testimonials .reviews ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.testimonials .reviews ul.slick-dots button {
+  background: none;
+  margin: none;
+  padding: none;
+  border: none;
+  font-size: 0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 5px;
+  margin-bottom: 60px;
+}
+section.testimonials .reviews ul.slick-dots li.slick-active button {
+  background: #ffffff;
+  padding: 5px;
+}
+section.testimonials .clients {
+  padding: 65px 0;
+  background: #ffffff;
+}
+section.testimonials .clients .clients_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+section.testimonials .clients .clients_list .client_item {
+  width: calc(20% - 10px);
+  text-align: center;
+}
+section.testimonials .clients .clients_list .client_item .client_logo {
+  opacity: 0.5;
+  max-width: 100%;
+}
+section.contacts {
+  padding: 100px 0;
+  background: #f5f5f5;
+}
+section.contacts .contacts_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+section.contacts .contacts_box .contacts_title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+}
+section.contacts .contacts_box .contacts_description {
+  max-width: 550px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #787878;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  margin-bottom: 40px;
+}
+section.contacts .contacts_box form {
+  max-width: 670px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+section.contacts .contacts_box form .input_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.contacts .contacts_box form .input_box input[type="text"],
+section.contacts .contacts_box form .input_box input[type="email"] {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  padding-left: 20px;
+  background: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #787878;
+  font-size: 15x;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  margin-bottom: 30px;
+}
+section.contacts .contacts_box form .input_box > label {
+  width: calc(50% - 16px);
+}
+section.contacts .contacts_box form label {
+  width: 100%;
+}
+section.contacts .contacts_box form .input_title {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: none;
+  padding-left: 20px;
+  background: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #787878;
+  font-size: 15x;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  margin-bottom: 30px;
+}
+section.contacts .contacts_box form textarea {
+  width: 100%;
+  height: 250px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 15px;
+  border: none;
+  background: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #787878;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+section.contacts .contacts_box form .submit {
+  width: 100%;
+}
+section.contacts .contacts_box form .submit input[type="submit"] {
+  width: 175px;
+  height: 50px;
+  border: none;
+  background: #10c9c3;
+  transition: 0.3s background-color;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+section.contacts .contacts_box form .submit input[type="submit"]:hover {
+  background: #252525;
+  transition: 0.3s background-color;
+}
+footer {
+  padding: 50px 0;
+  background: #141414;
+}
+footer .footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer_box .footer_text .company_name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.001em;
+  margin-bottom: 30px;
+}
+footer .footer_box .footer_text .copyright {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #bcbcbc;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+footer .footer_box .footer_contacts .email {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #bcbcbc;
+  letter-spacing: 0.005em;
+  margin-bottom: 10px;
+}
+footer .footer_box .footer_contacts .number {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #bcbcbc;
+  letter-spacing: 0.005em;
+}
+footer .footer_box .footer_social ul li {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #bcbcbc;
+  letter-spacing: 0.005em;
+  transition: 0.3s color;
+  margin-bottom: 10px;
+}
+footer .footer_box .footer_social ul li a {
+  color: inherit;
+}
+footer .footer_box .footer_social ul li:hover {
+  color: #8b8b8b;
+  transition: 0.3s color;
+}
+@media only screen and (max-width: 768px) {
+  header .header_box .header_menu {
+    width: 100%;
+  }
+  header .header_box .header_menu ul {
+    justify-content: flex-end;
+  }
+  header .header_box .header_menu ul li {
+    padding: 0 5px;
+    font-size: 10px;
+  }
+  section.contact_us {
+    padding: 75px 0;
+  }
+  section.contact_us .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  section.about_us .about {
+    padding: 75px 0;
+  }
+  section.about_us .skills {
+    flex-direction: column;
+  }
+  section.about_us .skills .left_box {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 35px;
+  }
+  section.about_us .skills .left_box .wrapper {
+    max-width: 100%;
+  }
+  section.about_us .skills .right_box {
+    width: 100%;
+  }
+  section.about_us .skills .right_box img {
+    height: 450px;
+  }
+  section.work .statictic {
+    padding: 50px 0;
+  }
+  section.work .gallery .gallery_list .gallery_item .link img {
+    width: 100%;
+    height: 100%;
+  }
+  section.work_process {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  section.services {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  section.services .services_list .service_item {
+    max-width: calc(25% - 25px);
+    margin-bottom: 40px;
+  }
+  section.testimonials .reviews ul.slick-dots button {
+    margin-bottom: 25px;
+  }
+  section.testimonials .reviews .reviews_slider .slide .wrapper {
+    padding-top: 50px;
+  }
+  section.testimonials .reviews .reviews_slider .slide .wrapper .slide_description {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  section.testimonials .reviews .reviews_slider .slide .wrapper .slide_author {
+    margin-bottom: 50px;
+  }
+  section.testimonials .clients {
+    padding: 25px 0;
+  }
+  section.contacts {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .header_box .header_menu {
+    max-width: 100%;
+  }
+  header .header_box .header_menu ul li {
+    padding: 0 5px;
+    font-size: 8px;
+  }
+  .sticky {
+    width: 100%;
+    max-width: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  section.work .statictic .items_list .item .icon {
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  section.work .statictic .items_list .item .item_text .title_text {
+    font-size: 10px;
+  }
+  section.work .gallery .loadmore {
+    height: 50px;
+    font-size: 10px;
+  }
+  section.work_process .video_box figure figcaption a .play_icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+  }
+  section.work_process .video_box figure figcaption a .play_icon:hover {
+    font-size: 25px;
+  }
+  section.services {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  section.services .services_list .service_item {
+    max-width: calc(50% - 10px);
+  }
+  section.services .services_list .service_item .service_title {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  section.services .services_list .service_item .service_description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer {
+    padding: 25px 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  header {
+    padding-top: 10px;
+  }
+  header .header_box .header_menu ul li {
+    padding: 0 3px;
+    font-size: 7px;
+  }
+  section.contact_us {
+    padding: 25px 0;
+  }
+  section.contact_us .wrapper .contact_box .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  section.contact_us .wrapper .contact_box .description {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding-right: 25px;
+  }
+  section.contact_us .wrapper .contact_box .button {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 9px;
+  }
+  section.about_us .about {
+    padding: 25px 0;
+  }
+  section.about_us .about .about_box .title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    line-height: 25px;
+  }
+  section.about_us .about .about_box .description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  section.about_us .skills .left_box {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+  section.about_us .skills .left_box .wrapper .title {
+    margin-bottom: 20px;
+  }
+  section.about_us .skills .left_box .wrapper .items_list .item {
+    margin-bottom: 25px;
+  }
+  section.about_us .skills .left_box .wrapper .items_list .item .item_text {
+    margin-bottom: 10px;
+  }
+  section.about_us .skills .left_box .wrapper .items_list .item .item_text .item_title {
+    font-size: 10px;
+  }
+  section.about_us .skills .left_box .wrapper .items_list .item .item_text .item_fill {
+    font-size: 10px;
+  }
+  section.about_us .skills .left_box .wrapper .items_list .item .meter {
+    height: 2px;
+  }
+  section.about_us .skills .right_box img {
+    height: 200px;
+  }
+  section.work_process {
+    padding-top: 20px;
+  }
+  section.work_process .work_box {
+    margin-bottom: 30px;
+  }
+  section.work_process .work_box .title {
+    margin-bottom: 20px;
+  }
+  section.work_process .work_box .description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  section.work .load_more {
+    height: 50px;
+  }
+  section.work .load_more .load_bttn {
+    font-size: 8px;
+  }
+  section.work .statictic {
+    padding: 25px 0;
+  }
+  section.work .statictic .items_list .item .icon {
+    margin-right: 5px;
+    font-size: 25px;
+  }
+  section.work .statictic .items_list .item .item_text .title_text {
+    font-size: 7px;
+  }
+  section.work .statictic .items_list .item .item_text .amount_text {
+    font-size: 15px;
+  }
+  section.testimonials .reviews .reviews_slider .slide .wrapper .slide_description {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  section.testimonials .reviews .reviews_slider .slide .wrapper .slide_author {
+    font-size: 10px;
+    margin-bottom: 25px;
+  }
+  section.testimonials .reviews ul.slick-dots li.slick-active button {
+    background: #ffffff;
+    padding: 3px;
+  }
+  section.testimonials .reviews ul.slick-dots button {
+    padding: 2px;
+  }
+  footer {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+  footer .footer_box {
+    flex-wrap: wrap;
+  }
+  footer .footer_box .footer_text {
+    width: 50%;
+  }
+  footer .footer_box .footer_text .company_name {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  footer .footer_box .footer_text .copyright {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  footer .footer_box .footer_contacts {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  footer .footer_box .footer_contacts .email {
+    font-size: 13px;
+  }
+  footer .footer_box .footer_social {
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer .footer_box .footer_social ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header .header_box .header_menu ul li {
+    padding: 0 3px;
+    font-size: 6px;
+  }
+  section.work .gallery .loadmore {
+    height: 34px;
+    font-size: 8px;
+  }
+}

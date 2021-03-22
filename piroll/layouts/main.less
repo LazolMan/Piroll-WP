@@ -1,0 +1,1260 @@
+@import "reset.css";
+
+@white: #ffffff;
+@black: #000000;
+@blue: #10c9c3;
+@darkGrey: #787878;
+@lightGrey: #e9e9e9;
+
+.nunitoFont() {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.workFont() {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+.montserratFont() {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.wrapper {
+  width: ~"calc(100% - 20px)";
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  max-width: 100%;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  z-index: 9;
+}
+
+header {
+  padding-top: 38px;
+  background: @lightGrey;
+
+  .header_box {
+    display: flex;
+    justify-content: space-between;
+
+    .header_menu {
+      width: 100%;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          .montserratFont();
+
+          color: @black;
+          font-size: 12px;
+          line-height: 24px;
+          letter-spacing: 0.1em;
+
+          transition: 0.3s color;
+
+          text-transform: uppercase;
+          padding: 0 5px;
+
+          .active {
+            color: @blue;
+            transition: 0.3s color;
+          }
+
+          &.active {
+            color: @blue;
+            transition: 0.3s color;
+          }
+
+          &:hover {
+            color: @blue;
+            cursor: pointer;
+            transition: 0.3s color;
+          }
+
+          a {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.contact_us {
+  background: @lightGrey;
+  padding-top: 180px;
+  padding-bottom: 200px;
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .contact_box {
+      width: 480px;
+
+      .title {
+        .montserratFont();
+
+        color: @black;
+        font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 0.01em;
+
+        margin-bottom: 40px;
+      }
+
+      .description {
+        .nunitoFont();
+
+        color: @darkGrey;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.005em;
+
+        margin-bottom: 40px;
+      }
+
+      .button {
+        display: block;
+        width: 180px;
+        height: 55px;
+        background: @blue;
+        text-align: center;
+        text-transform: uppercase;
+
+        .montserratFont();
+
+        color: @white;
+        line-height: 55px;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        transition: 0.3s background-color;
+
+        &:hover {
+          background: #252525;
+          transition: 0.3s background-color;
+        }
+      }
+    }
+  }
+}
+
+section.about_us {
+  .about {
+    padding: 100px 0;
+
+    .about_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        .montserratFont();
+
+        color: @black;
+        font-size: 30px;
+        line-height: 60px;
+        letter-spacing: 0.001em;
+
+        margin-bottom: 30px;
+      }
+
+      .description {
+        max-width: 620px;
+        text-align: center;
+
+        .nunitoFont();
+
+        color: @darkGrey;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    width: 100%;
+
+    .left_box {
+      width: 50%;
+      background: #f8f9f9;
+      padding-top: 150px;
+      padding-bottom: 110px;
+
+      .wrapper {
+        max-width: 585px;
+        margin-right: 0;
+
+        .title {
+          .montserratFont();
+
+          font-size: 30px;
+          color: @black;
+          letter-spacing: 0.001em;
+
+          margin-bottom: 40px;
+        }
+
+        .items_list {
+          .item {
+            margin-bottom: 40px;
+
+            .item_text {
+              margin-bottom: 20px;
+
+              .item_title {
+                .montserratFont();
+
+                font-size: 12px;
+                color: @black;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+
+                margin-right: 18px;
+              }
+
+              .item_fill {
+                .montserratFont();
+
+                font-size: 12px;
+                color: @black;
+                letter-spacing: 0.1em;
+              }
+            }
+
+            .meter {
+              height: 3px;
+              position: relative;
+              background: #d8d8d8;
+              width: 85%;
+
+              span {
+                display: block;
+                height: 100%;
+                background-color: @blue;
+                position: relative;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right_box {
+      width: 50%;
+      background: @lightGrey;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+      }
+    }
+  }
+}
+
+section.work {
+  .statictic {
+    padding: 100px 0;
+    background: @blue;
+
+    .items_list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .item {
+        display: flex;
+
+        color: @white;
+        text-transform: uppercase;
+
+        .icon {
+          margin-right: 20px;
+
+          font-size: 40px;
+        }
+
+        .item_text {
+          .amount_text {
+            display: block;
+
+            .montserratFont();
+
+            font-size: 18px;
+            letter-spacing: 0.03em;
+
+            margin-bottom: 10px;
+          }
+
+          .title_text {
+            display: block;
+
+            .montserratFont();
+
+            font-size: 12px;
+            color: @white;
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+    }
+  }
+
+  .gallery {
+    .gallery_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      background: #dddddd;
+
+      .gallery_item {
+        width: 25%;
+        height: auto;
+        max-width: 340px;
+        max-height: 300px;
+
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: 0.3s background-color;
+
+        .gallery_img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .eye_icon > i {
+          display: none;
+        }
+
+        &:hover {
+          .link {
+            width: 100%;
+            height: 100%;
+
+            display: inline-block;
+            position: relative;
+
+            background: rgba(0, 0, 0, 0.8);
+            transition: 0.3s background-color;
+
+            img {
+              opacity: 0.5;
+            }
+
+            .eye_icon > i {
+              display: inline-block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-top: -20px;
+              margin-left: -20px;
+
+              font-size: 40px;
+              color: @white;
+            }
+          }
+        }
+      }
+    }
+
+    .loadmore {
+      width: 100%;
+      height: 100px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #f5f5f5;
+
+      .montserratFont();
+
+      color: #8e8e8e;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      cursor: pointer;
+    }
+  }
+}
+
+section.work_process {
+  padding-top: 100px;
+  padding-bottom: 85px;
+
+  .work_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    margin-bottom: 60px;
+
+    .title {
+      .montserratFont();
+
+      font-size: 30px;
+      letter-spacing: 0.01em;
+      color: @black;
+
+      margin-bottom: 40px;
+    }
+
+    .description {
+      max-width: 525px;
+
+      .nunitoFont();
+
+      font-size: 16px;
+      letter-spacing: 0.005em;
+      color: @darkGrey;
+      line-height: 24px;
+    }
+  }
+
+  .video_box {
+    width: 100%;
+    color: @white;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 570px;
+      opacity: 0.5;
+    }
+
+    figure {
+      position: relative;
+
+      figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          color: inherit;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .play_icon {
+            width: 85px;
+            height: 85px;
+            background-color: @blue;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 85px;
+            font-size: 25px;
+            transition: 0.3s font-size;
+
+            &:hover {
+              font-size: 30px;
+              transition: 0.3s font-size;
+            }
+
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.services {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background: #f5f5f5;
+
+  .services_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0 20px;
+
+    .service_item {
+      max-width: ~"calc(25% - 55px)";
+      text-align: center;
+
+      margin-bottom: 60px;
+
+      .icon {
+        font-size: 40px;
+        color: @darkGrey;
+      }
+
+      .service_title {
+        .montserratFont();
+
+        font-size: 12px;
+        color: #191919;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      .service_description {
+        .nunitoFont();
+
+        font-size: 16px;
+        color: @darkGrey;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+      }
+    }
+  }
+}
+
+section.testimonials {
+  .reviews {
+    background-color: @blue;
+
+    .reviews_slider {
+      .slide > .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        padding-top: 180px;
+
+        .slide_description {
+          max-width: 835px;
+
+          .montserratFont();
+
+          font-size: 24px;
+          font-weight: 500;
+          color: @white;
+          line-height: 36px;
+          letter-spacing: 0.001em;
+
+          margin-bottom: 40px;
+        }
+
+        .slide_author {
+          .montserratFont();
+
+          font-size: 12px;
+          font-weight: 500;
+          color: @white;
+          letter-spacing: 0.1em;
+
+          margin-bottom: 110px;
+        }
+      }
+    }
+
+    ul.slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        background: none;
+        margin: none;
+        padding: none;
+        border: none;
+        font-size: 0;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 3px;
+        border-radius: 100%;
+        display: block;
+        margin: 0 5px;
+        margin-bottom: 60px;
+      }
+
+      li.slick-active button {
+        background: rgba(255, 255, 255, 1);
+
+        padding: 5px;
+      }
+    }
+  }
+
+  .clients {
+    padding: 65px 0;
+    background: @white;
+
+    .clients_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 20px;
+
+      .client_item {
+        width: ~"calc(20% - 10px)";
+        text-align: center;
+
+        .client_logo {
+          opacity: 0.5;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+section.contacts {
+  padding: 100px 0;
+  background: #f5f5f5;
+
+  .contacts_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .contacts_title {
+      .montserratFont();
+
+      font-size: 30px;
+      color: @black;
+      letter-spacing: 0.01em;
+
+      margin-bottom: 40px;
+    }
+
+    .contacts_description {
+      max-width: 550px;
+
+      .nunitoFont();
+
+      font-size: 16px;
+      color: @darkGrey;
+      line-height: 24px;
+      letter-spacing: 0.005em;
+
+      margin-bottom: 40px;
+    }
+
+    form {
+      max-width: 670px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      .input_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        input[type="text"],
+        input[type="email"] {
+          //width: ~"calc(100% - 7px)";
+          width: 100%;
+          height: 50px;
+
+          box-sizing: border-box;
+
+          border: none;
+          padding-left: 20px;
+          background: @white;
+
+          .nunitoFont();
+
+          color: @darkGrey;
+          font-size: 15x;
+          line-height: 24px;
+          letter-spacing: 0.005em;
+
+          margin-bottom: 30px;
+        }
+      }
+
+      .input_box > label {
+        width: calc(50% - 16px);
+      }
+
+      label {
+        width: 100%;
+      }
+
+      .input_title {
+        width: 100%;
+        height: 50px;
+
+        box-sizing: border-box;
+
+        border: none;
+        padding-left: 20px;
+        background: @white;
+
+        .nunitoFont();
+
+        color: @darkGrey;
+        font-size: 15x;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+
+        margin-bottom: 30px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 250px;
+
+        box-sizing: border-box;
+
+        padding-left: 20px;
+        padding-top: 15px;
+        border: none;
+        background: @white;
+
+        .nunitoFont();
+
+        color: @darkGrey;
+        font-size: 15px;
+        line-height: 24px;
+
+        margin-bottom: 30px;
+      }
+
+      .submit {
+        width: 100%;
+
+        input[type="submit"] {
+          width: 175px;
+          height: 50px;
+
+          border: none;
+
+          background: @blue;
+          transition: 0.3s background-color;
+          text-align: center;
+
+          .montserratFont();
+
+          color: @white;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0.1em;
+
+          &:hover {
+            background: #252525;
+            transition: 0.3s background-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 50px 0;
+  background: #141414;
+
+  .footer_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer_text {
+      .company_name {
+        .montserratFont();
+
+        font-size: 18px;
+        font-weight: 500;
+        color: @white;
+        letter-spacing: 0.001em;
+
+        margin-bottom: 30px;
+      }
+
+      .copyright {
+        .nunitoFont();
+
+        font-size: 15px;
+        color: #bcbcbc;
+        line-height: 24px;
+        letter-spacing: 0.005em;
+      }
+    }
+
+    .footer_contacts {
+      .email {
+        display: block;
+
+        .nunitoFont();
+
+        font-size: 15px;
+        color: #bcbcbc;
+        letter-spacing: 0.005em;
+
+        margin-bottom: 10px;
+      }
+
+      .number {
+        display: block;
+
+        .nunitoFont();
+
+        font-size: 15px;
+        color: #bcbcbc;
+        letter-spacing: 0.005em;
+      }
+    }
+
+    .footer_social {
+      ul {
+        li {
+          .nunitoFont();
+
+          font-size: 15px;
+          color: #bcbcbc;
+          letter-spacing: 0.005em;
+          transition: 0.3s color;
+
+          margin-bottom: 10px;
+
+          a {
+            color: inherit;
+          }
+
+          &:hover {
+            color: #8b8b8b;
+            transition: 0.3s color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header .header_box .header_menu {
+    width: 100%;
+
+    ul {
+      justify-content: flex-end;
+
+      li {
+        padding: 0 5px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  section.contact_us {
+    padding: 75px 0;
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  section.about_us {
+    .about {
+      padding: 75px 0;
+    }
+
+    .skills {
+      flex-direction: column;
+
+      .left_box {
+        width: 100%;
+        padding-top: 75px;
+        padding-bottom: 35px;
+
+        .wrapper {
+          max-width: 100%;
+        }
+      }
+
+      .right_box {
+        width: 100%;
+
+        img {
+          height: 450px;
+        }
+      }
+    }
+  }
+
+  section.work {
+    .statictic {
+      padding: 50px 0;
+    }
+
+    .gallery .gallery_list .gallery_item .link img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  section.work_process {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  section.services {
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+    .services_list .service_item {
+      max-width: ~"calc(25% - 25px)";
+      margin-bottom: 40px;
+    }
+  }
+
+  section.testimonials .reviews {
+    ul.slick-dots button {
+      margin-bottom: 25px;
+    }
+
+    .reviews_slider .slide .wrapper {
+      padding-top: 50px;
+
+      .slide_description {
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      .slide_author {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  section.testimonials .clients {
+    padding: 25px 0;
+  }
+
+  section.contacts {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .header_box .header_menu {
+    max-width: 100%;
+
+    ul li {
+      padding: 0 5px;
+      font-size: 8px;
+    }
+  }
+
+  .sticky {
+    width: 100%;
+    max-width: 480px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  section.work {
+    .statictic .items_list .item {
+      .icon {
+        margin-right: 10px;
+        font-size: 30px;
+      }
+
+      .item_text .title_text {
+        font-size: 10px;
+      }
+    }
+
+    .gallery .loadmore {
+      height: 50px;
+      font-size: 10px;
+    }
+  }
+
+  section.work_process .video_box figure figcaption a .play_icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+
+    &:hover {
+      font-size: 25px;
+    }
+}
+
+  section.services {
+    padding-top: 40px;
+    padding-bottom: 0px;
+
+    .services_list .service_item {
+      max-width: ~"calc(50% - 10px)";
+
+      .service_title {
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .service_description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  footer {
+    padding: 25px 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    padding-top: 10px;
+
+    .header_box .header_menu ul li {
+      padding: 0 3px;
+      font-size: 7px;
+    }
+  }
+
+  section.contact_us {
+    padding: 25px 0;
+
+    .wrapper .contact_box {
+      .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        padding-right: 25px;
+      }
+
+      .button {
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 9px;
+      }
+    }
+  }
+
+  section.about_us {
+    .about {
+      padding: 25px 0;
+
+      .about_box {
+        .title {
+          font-size: 30px;
+          margin-bottom: 25px;
+          line-height: 25px;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .skills {
+      .left_box {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 0px;
+
+        .wrapper {
+          .title {
+            margin-bottom: 20px;
+          }
+
+          .items_list .item {
+            margin-bottom: 25px;
+
+            .item_text {
+              margin-bottom: 10px;
+
+              .item_title {
+                font-size: 10px;
+              }
+
+              .item_fill {
+                font-size: 10px;
+              }
+            }
+
+            .meter {
+              height: 2px;
+            }
+          }
+        }
+      }
+
+      .right_box img {
+        height: 200px;
+      }
+    }
+  }
+
+  section.work_process {
+    padding-top: 20px;
+
+    .work_box {
+      margin-bottom: 30px;
+
+      .title {
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  section.work {
+    .load_more {
+      height: 50px;
+
+      .load_bttn {
+        font-size: 8px;
+      }
+    }
+
+    .statictic {
+      padding: 25px 0;
+
+      .items_list .item {
+        .icon {
+          margin-right: 5px;
+          font-size: 25px;
+        }
+
+        .item_text {
+          .title_text {
+            font-size: 7px;
+          }
+          .amount_text {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  section.testimonials .reviews {
+    .reviews_slider .slide .wrapper {
+      .slide_description {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+
+      .slide_author {
+        font-size: 10px;
+        margin-bottom: 25px;
+      }
+    }
+
+    ul.slick-dots {
+      li.slick-active button {
+        background: #ffffff;
+        padding: 3px;
+      }
+
+      button {
+        padding: 2px;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 25px;
+    padding-bottom: 0;
+
+    .footer_box {
+      flex-wrap: wrap;
+
+      .footer_text {
+        width: 50%;
+
+        .company_name {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+
+        .copyright {
+          font-size: 13px;
+          line-height: 18px;
+        }
+      }
+
+      .footer_contacts {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .email {
+          font-size: 13px;
+        }
+      }
+
+      .footer_social {
+        width: 100%;
+        margin-top: 20px;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  header .header_box .header_menu ul li {
+    padding: 0 3px;
+    font-size: 6px;
+  }
+
+  section.work .gallery .loadmore {
+    height: 34px;
+    font-size: 8px;
+  }
+}
